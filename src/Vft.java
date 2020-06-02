@@ -34,10 +34,10 @@ public class Vft {
 				if(failures_doc2.get(e.getKey())!=null){
 					int doc2_fail_val = failures_doc2.get(e.getKey());
 					if(doc2_fail_val>e.getValue()){
-						newFailures.put(e.getKey(), "Old Value:"+failures_doc2.get(e.getKey()+"New Value:"+e.getValue()));
+						newFailures.put(e.getKey(), "Old Value:"+failures_doc2.get(e.getKey()+" New Value:"+e.getValue()));
 					}
 				}else{
-					newFailures.put(e.getKey(), "Old Value:0"+"New Value:"+e.getValue());
+					newFailures.put(e.getKey(), "Old Value:0"+" New Value:"+e.getValue());
 				}
 			}
 			//print the values
@@ -75,7 +75,7 @@ public class Vft {
 				if(r>0){
 					resultElements = e.getElementsByIndexEquals(0);
 					resultData = resultElements.get(0).text();
-					System.out.println(resultData);
+//					System.out.println(resultData);
 					failures_doc.put(resultData, r);
 				}
 			}
